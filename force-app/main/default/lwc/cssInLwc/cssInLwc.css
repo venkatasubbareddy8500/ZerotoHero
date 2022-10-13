@@ -1,0 +1,15 @@
+p{
+    color:chartreuse;
+    font-size: 30px;
+    border: var(--lwc-borderWidthThin, 1px) solid red;;
+}
+
+.user{
+    color:darkmagenta;
+    font-size: 30px;
+}
+
+.user.hover{
+    font-size: 40px;
+    color: brown;
+}

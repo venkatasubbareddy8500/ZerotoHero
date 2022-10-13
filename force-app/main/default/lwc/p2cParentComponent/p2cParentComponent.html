@@ -1,0 +1,35 @@
+<template>
+    <!-- Example of Simple Data -->
+    <c-p2c-alert-component message = "Hurray i got the  Data!!!" card-title="Parent To Child Primitive" number is-valid>
+        
+    </c-p2c-alert-component>
+    <!-- Example of complex data -->
+    <div class="slds-var-m-bottom_medium"></div>
+    <c-p2c-child-component child-details={childData}>
+
+    </c-p2c-child-component>
+    <!-- Example of data passing an action -->
+
+
+    <div class="slds-var-m-bottom_medium"></div>
+    <lightning-card title="Parent to Child communication on action">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="number" label="Enter Percentage" onkeyup={changeHandler} value={percentage}></lightning-input>
+            <c-p2c-progress-component progress-value={percentage}>
+                
+            </c-p2c-progress-component>
+        </div>
+    </lightning-card>
+
+    <!-- Example of calling child method from parent -->
+    <div class="slds-var-m-right_x-small"></div>
+    <lightning-button variant="brand" label="Reset Slider" onclick={handleClick}></lightning-button>
+
+    <c-p2c-slider-component></c-p2c-slider-component>
+
+
+    <lightning-formatted-url 
+    value="https://sketchfab.com/models/79f7777317004d0fb4e1092c3a9c7738/embed" 
+    label="3DImage"
+    target="_blank"></lightning-formatted-url>
+</template>

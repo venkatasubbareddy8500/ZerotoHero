@@ -1,0 +1,15 @@
+<template>
+    <lightning-card>
+        <h3>
+            <lightning-icon icon-name="utility:connected_apps" alternative-text="Connected" size="small" title="Child">
+            </lightning-icon>
+            Child Component
+        </h3>
+        <p class="slds-var-m-around_medium">
+
+            {textMessage}<br/>
+            <lightning-button label="Send Event To Parent" variant="Brand" onclick={sendMessageToParent}>
+            </lightning-button>
+        </p>
+    </lightning-card>
+</template>
